@@ -3,30 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Currículum de David Simon Mamani Gutierrez</title>
+  <title>CV - David Simon Mamani Gutierrez</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
+
+    <!-- Encabezado -->
     <header class="person">
       <div class="person-left">
         <h1 class="full-name">David Simon Mamani Gutierrez</h1>
         <p class="role">Técnico Superior en Sistemas Informáticos</p>
         <div class="contact">
-          <span class="phone">+591 72571169</span>
-          <span class="email">dmgars97@gmail.com</span>
+          <span class="phone">Tel: +591 72571169</span>
+          <span class="email">Email: <a href="mailto:dmgars97@gmail.com">dmgars97@gmail.com</a></span>
         </div>
       </div>
       <div class="photo">
-        <img src="Imagen1.png" alt="Fotografía de David Simon Mamani Gutierrez" loading="lazy">
+        <img src="Imagen1.png" alt="Foto de David Simon Mamani Gutierrez" loading="lazy">
       </div>
     </header>
 
-    <div class="layout">
+    <!-- Contenido principal -->
+    <main class="layout" id="contenido-principal">
+
+      <!-- Columna izquierda -->
       <div class="left">
 
-        <section class="card">
-          <h2 class="title">Resumen</h2>
+        <section class="card" aria-labelledby="resumen">
+          <h2 class="title" id="resumen">Resumen</h2>
           <p>
             Técnico superior en Sistemas Informáticos con experiencia en desarrollo de aplicaciones móviles y
             web, así como en proyectos de control y gestión de inventarios. Capaz de trabajar en equipo,
@@ -34,46 +39,46 @@
           </p>
         </section>
 
-        <section class="card">
-          <h2 class="title">Formación Académica</h2>
+        <section class="card" aria-labelledby="formacion">
+          <h2 class="title" id="formacion">Formación Académica</h2>
           <div class="item">
             <h3>Instituto Técnico Jesús María</h3>
             <p class="muted">Técnico Superior en Sistemas Informáticos — Febrero 2020 – 2023</p>
           </div>
         </section>
 
-        <section class="card">
-          <h2 class="title">Proyectos y Experiencia</h2>
+        <section class="card" aria-labelledby="experiencia">
+          <h2 class="title" id="experiencia">Proyectos y Experiencia</h2>
 
-          <div class="item">
-            <h3>Aplicación móvil — Traductor de Idiomas con Reconocimiento de Voz</h3>
+          <article class="item" aria-labelledby="proyecto1">
+            <h3 id="proyecto1">Aplicación móvil — Traductor de Idiomas con Reconocimiento de Voz</h3>
             <p class="muted">Android · Java · API de Google Translate</p>
             <ul>
               <li>Traduce entrada de voz entre idiomas y devuelve texto o voz.</li>
               <li>Implementado en Android Studio usando Java y APIs de traducción.</li>
             </ul>
-          </div>
+          </article>
 
-          <div class="item">
-            <h3>Aplicación web — Gestión de Inventario y Ventas</h3>
+          <article class="item" aria-labelledby="proyecto2">
+            <h3 id="proyecto2">Aplicación web — Gestión de Inventario y Ventas</h3>
             <p class="muted">HTML, CSS, JavaScript, Bootstrap, PHP, MySQL</p>
             <ul>
               <li>Sistema para gestionar operaciones de venta, almacenamiento y distribución.</li>
               <li>Arquitectura basada en MVC.</li>
             </ul>
-          </div>
+          </article>
 
-          <div class="item">
-            <h3>Aplicación de escritorio — Sistema de Asistencia y Registro de Empleados</h3>
+          <article class="item" aria-labelledby="proyecto3">
+            <h3 id="proyecto3">Aplicación de escritorio — Sistema de Asistencia y Registro de Empleados</h3>
             <p class="muted">C# · MySQL</p>
             <ul>
               <li>Proyecto desarrollado para registrar nuevos empleados, asignar roles y realizar seguimiento de usuarios.</li>
             </ul>
-          </div>
+          </article>
         </section>
 
-        <section class="card">
-          <h2 class="title">Cursos Relevantes</h2>
+        <section class="card" aria-labelledby="cursos">
+          <h2 class="title" id="cursos">Cursos Relevantes</h2>
           <ul class="small-list">
             <li>Introducción a Python Web con Django — Instituto Técnico Jesús María (Jul 2023)</li>
             <li>Desarrollo Web Full Stack — Instituto Técnico Jesús María (Jul 2023)</li>
@@ -83,9 +88,11 @@
 
       </div>
 
-      <div class="right">
-        <section class="card compact">
-          <h2 class="title">Habilidades Blandas</h2>
+      <!-- Columna derecha -->
+      <aside class="right">
+
+        <section class="card compact" aria-labelledby="habilidades-blandas">
+          <h2 class="title" id="habilidades-blandas">Habilidades Blandas</h2>
           <ul class="skills">
             <li>Trabajo en equipo</li>
             <li>Paciencia</li>
@@ -96,8 +103,8 @@
           </ul>
         </section>
 
-        <section class="card compact">
-          <h2 class="title">Habilidades Técnicas</h2>
+        <section class="card compact" aria-labelledby="habilidades-tecnicas">
+          <h2 class="title" id="habilidades-tecnicas">Habilidades Técnicas</h2>
           <p class="muted">Lenguajes / Herramientas</p>
           <ul class="stack">
             <li>C# · Java · PHP</li>
@@ -108,15 +115,16 @@
           </ul>
         </section>
 
-        <section class="card compact">
-          <h2 class="title">Idiomas</h2>
+        <section class="card compact" aria-labelledby="idiomas">
+          <h2 class="title" id="idiomas">Idiomas</h2>
           <ul class="small-list">
             <li>Español — Nativo</li>
             <li>Inglés — Intermedio</li>
           </ul>
         </section>
-      </div>
-    </div>
+      </aside>
+    </main>
+
   </div>
 </body>
 </html>
