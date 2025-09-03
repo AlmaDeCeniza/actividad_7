@@ -85,7 +85,7 @@ header .photo img {
 }
 
 header .photo img:hover {
-  transform: scale(1.08);
+  transform: scale(1.12); /* más grande al pasar el cursor */
 }
 
 /* ===== Layout ===== */
@@ -112,8 +112,8 @@ header .photo img:hover {
 }
 
 .card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 18px rgba(0,0,0,0.15);
+  transform: translateY(-6px) scale(1.06); /* un poquito más grande y se eleva más */
+  box-shadow: 0 0 22px rgba(97, 172, 243, 0.6); 
 }
 
 .card h2.title {
@@ -123,10 +123,6 @@ header .photo img:hover {
   border-bottom: 3px solid #ffcc00;
   padding-bottom: 0.3rem;
   font-weight: 600;
-}
-
-.card:hover {
-  box-shadow: 0 0 18px rgba(97, 172, 243, 0.6); 
 }
 
 .skills li:hover,
@@ -189,8 +185,27 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-  background: #002244; /* un azul más profundo, tipo noche porteña */
+  background: linear-gradient(135deg, #74acdf, #002244); /* más profundo */
   color: #fff;
   border-top: 3px solid #ffcc00;
 }
 
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  header.person {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header .contact ul {
+    align-items: center;
+  }
+
+  header .photo {
+    margin-top: 1rem;
+  }
+}
